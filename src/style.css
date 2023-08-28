@@ -1,0 +1,26 @@
+#app {
+    max-width: 410px;
+    margin: 0px auto;
+    margin-block-start: 2rem;
+}
+
+.todo-result > ul li {
+    display: flex;
+    flex-direction: row;
+    max-width: 409px;
+}
+
+.todo-result > ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.todo-result > ul li p {
+    margin-block: 0.5rem;
+    flex: 0.99;
+}
+
+.todo-result > ul li input {
+    margin-block: 0.5rem;
+    flex: 0.01;
+}
