@@ -1,4 +1,12 @@
-const InitDebug = (root: HTMLDivElement, enable: boolean = true) => {
+type dLogType = (msg: any) => void
+
+/**
+ * Log message on DOM(Usefull for debugin in mobile).
+ * @param {HTMLDivElement} root - DOM reference for injecting logs.
+ * @param {boolean} enable - Approver for injection(default true).
+ * @returns {dLogType} - A function to log content in dom
+ */
+const InitDebug = (root: HTMLElement, enable: boolean = true): dLogType => {
     const debugEl = document.createElement('div') as HTMLDivElement
     debugEl.setAttribute('class', 'debug')
 
@@ -14,7 +22,7 @@ const InitDebug = (root: HTMLDivElement, enable: boolean = true) => {
         debugEl.appendChild(logEl)
     }
 
-    return { dLog }
+    return dLog
 }
 
 
