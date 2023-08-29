@@ -7,6 +7,7 @@
 .todo-result > ul li {
     display: flex;
     flex-direction: row;
+    align-items: center;
     max-width: 409px;
 }
 
@@ -23,4 +24,20 @@
 .todo-result > ul li input {
     margin-block: 0.5rem;
     flex: 0.01;
+}
+
+
+.todo-result_remove {
+    color: red;
+    cursor: pointer;
+    margin-inline-start: 0.5rem;
+}
+
+.todo-result_remove:hover {
+    opacity: 0.8;
+}
+
+
+.todo-result_remove:active {
+    opacity: 0.5;
 }

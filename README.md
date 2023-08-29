@@ -24,7 +24,6 @@ following format: 17:30 - 23. Aug 2023
 - Comprehensive documentation must be provided for each function, class, variable, and property.
 - All TypeScript types must be clearly defined.
 
-
 ### Instructions:
 - Utilize best practices for software development.
 - Use Object-Oriented Programming.

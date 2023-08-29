@@ -9,7 +9,6 @@ const Result = (root: HTMLDivElement) => {
 
 
     const ShowList = (todo: Todo) => {
-        if (todo.get().length > 0) {
             while (TaskListEl.firstChild) TaskListEl.firstChild.remove()
 
             const UlEl = document.createElement('ul') as HTMLUListElement
@@ -35,8 +34,16 @@ const Result = (root: HTMLDivElement) => {
                 }, false)
                 LiEl.appendChild(CheckBoxEl)
 
+
+                const RemoveEl = document.createElement('div') as HTMLDivElement
+                RemoveEl.setAttribute('class', 'todo-result_remove')
+                RemoveEl.textContent = "X"
+                RemoveEl.addEventListener('click', () => {
+                    todo.remove(item.id)
+                    ShowList(todo)
+                }, false)
+                LiEl.appendChild(RemoveEl)
             })
-        }
     }
 
     return { TaskListEl, ShowList }
