@@ -1,6 +1,8 @@
 # Vanilla Todo
 This is a simple todo project that my interviewer ask me to build!
 
+demo: [https://vanilla-todo-zero.vercel.app](https://vanilla-todo-zero.vercel.app)
+
 ## Task:
 Develop a simple To-Do application using TypeScript, HTML, and CSS.
 
